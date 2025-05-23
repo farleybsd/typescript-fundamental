@@ -1,0 +1,1 @@
+npx json-server .\src\data\data.json -p 5011
