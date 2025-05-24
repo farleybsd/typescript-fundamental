@@ -5,9 +5,13 @@ export enum accessOptions {
   undefined = 'Não Definido'
 }
 
-export type userType = {
-  fullName: string,
-  register?: string | number,
-  access?: accessOptions,
-  active?: boolean
+interface IPerson {
+  fullName: string;
+  address?: string[];
+}
+
+export interface IUser extends IPerson {
+  register?: string | number;
+  access?: accessOptions;
+  active?: boolean;
 }
